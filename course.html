@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashbboard</title>
+    <title>Course Registration Form</title>
     <meta name="author" content="IIIT Manipur">
     <meta name="description" content="">
     <link rel="stylesheet" href="./css/styles.dashboard.css">
@@ -36,11 +36,11 @@
                 <i class="fas fa-tachometer-alt mr-3"></i>
                 Dashboard
             </a>
-            <a href="payment.html" class="flex items-center text-white opacity-100 bg-blue-900 hover:opacity-100 hover:bg-blue-900 py-5 pl-6 nav-item">
+            <a href="payment.html" class="flex items-center text-white opacity-75 bg-blue-800 hover:opacity-100 hover:bg-blue-900 py-5 pl-6 nav-item">
                 <i class="fas fa-credit-card mr-3"></i>
                 Payment Form
             </a>
-            <a href="course.html" class="flex items-center text-white opacity-75 hover:opacity-100 hover:bg-blue-900 py-5 pl-6 nav-item">
+            <a href="course.html" class="flex items-center text-white opacity-100 bg-blue-900 py-5 pl-6 nav-item">
                 <i class="fas fa-book mr-3"></i>
                 Course Registration
             </a>
@@ -88,11 +88,11 @@
                     <i class="fas fa-tachometer-alt mr-3"></i>
                     Dashboard
                 </a>
-                <a href="Payment.html" class="flex items-center text-white opacity-100 py-2 pl-4 nav-item">
+                <a href="Payment.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
                     <i class="fas fa-credit-card mr-3"></i>
                     Payment details
                 </a>
-                <a href="course.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
+                <a href="course.html" class="flex items-center text-white py-2 pl-4 nav-item">
                     <i class="fas fa-book mr-3"></i>
                     Course Registration
                 </a>         
@@ -121,13 +121,13 @@
     
         <div class="w-full overflow-x-hidden border-t pb-8 flex flex-col">
             <main class="w-full flex-grow p-6 mb-8">
-                <h1 class="sm:text-3xl text-2xl text-blue-900 font-semibold mb-3">Payment Form</h1>
-                <div class="leading-relaxed text-gray-600">Add details of fee payment for the upcoming semester including <span class="text-blue-500">IMPS/ NEFT/ RTGS</span> number here.</div>
+                <h1 class="sm:text-3xl text-2xl text-blue-900 font-semibold mb-3">Course Registration Form</h1>
+                <div class="leading-relaxed text-gray-600">Select the courses to opt for the upcoming semester from the <a href="http://www.iiitmanipur.ac.in/snippets/ECE-CSESyllabus.pdf" target="blank"><span class="text-blue-500 hover:underline">list of courses.</span></a></div>
          
             </main>
             <div class="lg:w-9/12 md:w-11/12 bg-white shadow-2xl contact-container p-8 flex flex-col md:mx-auto w-full mt-10 md:mt-0">
                 <div class="mb-2">
-                    <h2 class="text-center text-blue-900 font-medium text-xl">Form: Acd/01</h2>
+                    <h2 class="text-center text-blue-900 font-medium text-xl">Form: Acd/02</h2>
                 </div>
                 <div class="mb-4">
                     <h4 class="text-right text-blue-900 font-normal text-lg">S.I. No. <span class="text-right text-red-700 font-normal text-lg">190545</span>
@@ -215,26 +215,16 @@
                     <div class="-mx-3 md:flex md:mb-8 mb-4">
                       <div class="md:w-1/2 md:mr-4 px-3 mb-6 md:mb-0">
                         <label class=" tracking-wide text-blue-900 text-base font-bold" for="job-type">
-                          Category
+                          Contact number
                         </label>
-                        <div>
-                          <select class="w-full bg-white border border-gray-300 text-black text-base py-3 px-4 pr-8 mb-3 rounded mt-2 focus:outline-none focus:border-blue-800" id="job-type">
-                              <option value="" disabled selected>Select category</option>
-                            <option>General</option>
-                            <option>OBC</option>
-                            <option>SC</option>
-                            <option>ST</option>
-                          </select>
-                        </div>
+                        <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mb-3 mt-2 focus:outline-none focus:border-blue-800" id="title" type="text" placeholder="10 digit mobile no." required>
                       </div>
-                      <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label class=" tracking-wide text-blue-900 text-base font-bold" for="department">
-                          Disability
+                      
+                      <div class="md:w-1/2 md:mr-4 px-3 mb-6 md:mb-0">
+                        <label class=" tracking-wide text-blue-900 text-base font-bold" for="job-type">
+                          Father's name
                         </label>
-                        <div class="flex py-2 px-8 items-center mt-2">
-                          <input type="radio" class="form-checkbox h-5 w-5 text-yellow-600" name="radio"><span class="ml-2 text-gray-700">Yes</span>
-                          <input type="radio" class="form-checkbox h-5 w-5 text-yellow-600 ml-6" checked name="radio"><span class="ml-2 text-gray-700">No</span>
-                        </div>
+                        <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mb-3 mt-2 focus:outline-none focus:border-blue-800" id="title" type="text" placeholder="Father's full name" required>
                       </div>
                     </div>
 
