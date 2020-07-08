@@ -64,7 +64,7 @@
                 <div x-show="isOpen" class="absolute w-32 bg-white rounded-lg shadow-lg py-2 mt-16">
                     <a href="#" class="block px-4 py-2 account-link hover:text-white hover:bg-blue-700">Account</a>
                     <a href="#" class="block px-4 py-2 account-link hover:text-white hover:bg-blue-700">Support</a>
-                    <a href="#" class="block px-4 py-2 account-link hover:text-white hover:bg-blue-700">Sign Out</a>
+                    <a href="index.html" class="block px-4 py-2 account-link hover:text-white hover:bg-blue-700">Sign Out</a>
                 </div>
             </div>
         </header>
@@ -104,7 +104,7 @@
                     <i class="fas fa-user mr-3"></i>
                     My Account
                 </a>
-                <a href="#" class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
+                <a href="index.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-2 pl-4 nav-item">
                     <i class="fas fa-sign-out-alt mr-3"></i>
                     Sign Out
                 </a>
@@ -228,65 +228,82 @@
                       </div>
                     </div>
 
-                    <div class="-mx-3 md:flex md:mb-8">
-                      <div class="md:w-1/4 px-3 mb-6 md:mb-0">
-                        <label class="tracking-wide text-blue-900 text-base font-bold mb-2">
-                          Tution fees
+                    <div class="-mx-3 md:flex md:mb-8 mb-4">
+                      <div class="md:w-1/2 md:mr-4 px-3 mb-6 md:mb-0">
+                        <label class=" tracking-wide text-blue-900 text-base font-bold" for="job-type">
+                          Registration for semester
                         </label>
-                        <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mt-2 mb-3 focus:outline-none focus:border-blue-800" type="text" placeholder="" disabled>
+                        <select class="w-full bg-white border border-gray-300 text-black text-base py-3 px-4 pr-8 mb-3 rounded mt-2 focus:outline-none focus:border-blue-800" id="department">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                        </select>
                       </div>
-                      <div class="md:w-1/4 px-3 mb-6 md:mb-0">
-                        <label class="tracking-wide text-blue-900 text-base font-bold mb-2">
-                          Other registration fees
+                      <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class=" tracking-wide text-blue-900 text-base font-bold" for="department">
+                          Backlogs
                         </label>
-                        <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mt-2 mb-3 focus:outline-none focus:border-blue-800" type="text" placeholder="" disabled>
-                      </div>
-                      <div class="md:w-1/4 px-3 mb-6 md:mb-0">
-                        <label class="tracking-wide text-blue-900 text-base font-bold mb-2">
-                          Mess advance
-                        </label>
-                        <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mt-2 mb-3 focus:outline-none focus:border-blue-800" type="text" placeholder="" disabled>
-                      </div>
-                      <div class="md:w-1/4 px-3 mb-6 md:mb-0">
-                        <label class="tracking-wide text-blue-900 text-base font-bold mb-2">
-                          Total
-                        </label>
-                        <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mt-2 mb-3 focus:outline-none focus:border-blue-800" type="text" placeholder="" disabled>
-                      </div>
-                      
-                    </div>
-
-                      <div class="-mx-3 md:flex md:mb-8 mb-4">
-                        <div class="md:w-1/4 px-3 mb-6 md:mb-0">
-                            <label class=" tracking-wide text-blue-900 text-base font-bold" for="job-type">
-                              Mode of payment
-                            </label>
-                            <div>
-                              <select class="w-full bg-white border border-gray-300 text-black text-base py-3 px-4 pr-8 mb-3 rounded mt-2 focus:outline-none focus:border-blue-800" id="job-type">
-                                <option value="" disabled selected>Select payment method</option>
-                                <option>IMPS</option>
-                                <option>NEFT</option>
-                                <option>RTGS</option>
-                              </select>
-                            </div>
-                          </div>
-
-                          <div class="md:w-1/4 px-3 mb-6 md:mb-0">
-                            <label class=" tracking-wide text-blue-900 text-base font-bold" for="job-type">
-                              Date of payment
-                            </label>
-                            <div>
-                                <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mt-2 mb-3 focus:outline-none focus:border-blue-800" id="application-link" type="date">
-                            </div>
-                          </div>
-                        <div class="md:w-1/2 px-3 mb-6 md:mb-0">
-                          <label class=" tracking-wide text-blue-900 text-base font-bold" for="application-link">
-                            Reference no.
-                          </label>
-                          <input class="w-full bg-white text-black border border-gray-300 rounded py-3 px-4 mt-2 mb-3 focus:outline-none focus:border-blue-800" id="application-link" type="text" placeholder="7 digit IMPS/ 16 digit NEFT/ 22 digit RTGS number">
+                        <div class="flex py-2 px-8 items-center mt-2">
+                          <input type="radio" class="form-checkbox h-5 w-5 text-yellow-600" name="radio"><span class="ml-2 text-gray-700">Yes</span>
+                          <input type="radio" class="form-checkbox h-5 w-5 text-yellow-600 ml-6" checked name="radio"><span class="ml-2 text-gray-700">No</span>
                         </div>
                       </div>
                       
+                    </div>
+                      
+                    <div class="-mx-3 md:flex md:mb-8 mb-4 justify-center">
+                      <div class="px-3 mb-6 md:mb-0 ">
+                        <table class="table-auto">
+                          <thead>
+                            <tr>
+                              <th class="px-4">Semester</th>
+                              <th class="px-4">Code</th>
+                              <th class="px-4">Course name</th>
+                              <th class="px-4">L</th>
+                              <th class="px-4">T</th>
+                              <th class="px-4">P</th>
+                              <th class="px-4">C</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="border px-4 py-2 text-center">2</td>
+                              <td class="border px-4 py-2">MA102</td>
+                              <td class="border px-4 py-2">Mathematics II</td>
+                              <td class="border px-4 py-2">3</td>
+                              <td class="border px-4 py-2">1</td>
+                              <td class="border px-4 py-2">0</td>
+                              <td class="border px-4 py-2">8</td>
+                            </tr>
+                            <tr>
+                              <td class="border px-4 py-2 text-center">2</td>
+                              <td class="border px-4 py-2">CS103</td>
+                              <td class="border px-4 py-2">Data Structures</td>
+                              <td class="border px-4 py-2">3</td>
+                              <td class="border px-4 py-2">1</td>
+                              <td class="border px-4 py-2">0</td>
+                              <td class="border px-4 py-2">8</td>
+                            </tr><tr>
+                              <td class="border px-4 py-2 text-center">2</td>
+                              <td class="border px-4 py-2">CS113</td>
+                              <td class="border px-4 py-2">Data Structures Lab</td>
+                              <td class="border px-4 py-2">0</td>
+                              <td class="border px-4 py-2">0</td>
+                              <td class="border px-4 py-2">3</td>
+                              <td class="border px-4 py-2">3</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    
+
+
                       <div class="-mx-3 flex">
                         <div class=" px-3">
                           <button class="bg-white border-2 border-gray-300 text-gray-700 font-medium py-2 px-4 rounded">

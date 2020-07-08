@@ -11,3 +11,13 @@
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem); }
+
+    .user-alert{
+      visibility: hidden;
+    }
+    .msg-alert{
+      visibility: hidden;
+    }
+    .show{
+      visibility:visible;
+    }
