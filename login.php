@@ -22,13 +22,13 @@
              * contact@johndoe.com
              * 
              */
-            $this->sender = "sahilgulati123456@gmail.com"; 
+            $this->sender = ""; 
     
             /**
              *  YOUR PASSWORD 
              *  ************
              */               
-            $this->password = "limberphoenix57";  
+            $this->password = "";  
     
             /**
              * Receiver email
